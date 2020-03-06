@@ -7,7 +7,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 from django.db.models.query import QuerySet
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from django.utils.six.moves import cPickle as pickle  # pylint: disable-msg=F
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import activate, get_language
